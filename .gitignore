@@ -1,0 +1,29 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Visual Studio Code
+.vscode/
+
+# Docker
+**/Dockerfile
+docker-compose*
+
+# Node.js (if frontend bhi hai)
+node_modules/
+
+# Secrets
+secrets.json
