@@ -20,7 +20,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: aspanil04
-        password: Monday1234
+        password: Monday@1234
 
     - name: Build and push Docker image
       run: |
