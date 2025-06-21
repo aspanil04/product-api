@@ -15,7 +15,7 @@ namespace ProductApi.Controllers
             _service = service;
         }
 
-        [HttpGet("getallproduct")]
+        [HttpGet("getproducts")]
         public IActionResult GetAll() => Ok(_service.GetAll());
 
         [HttpGet("{id}")]
