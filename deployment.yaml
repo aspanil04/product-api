@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: productapi
-          image: aspanil04/productapi:v1.3  # 👈 Will be overwritten by GitHub Actions
-          imagePullPolicy: Always           # 👈 Forces Kubernetes to always pull new image
+          image: aspanil04/productapi:dummy  # 👉 This will be overwritten by GitHub Actions
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
