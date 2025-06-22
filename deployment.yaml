@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapi-deployment
+  name: productapi
 spec:
   replicas: 1
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: productapi
-          image: aspanil04/productapi:latest
-          imagePullPolicy: Always
+          image: aspanil04/productapi:v1.0  # 👈 Will be overwritten by GitHub Actions
+          imagePullPolicy: Always           # 👈 Forces Kubernetes to always pull new image
           ports:
             - containerPort: 80

@@ -5,9 +5,8 @@ metadata:
 spec:
   selector:
     app: productapi
-  type: NodePort
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30007
+      port: 80        # Cluster IP port
+      targetPort: 80  # Container port (same as in deployment.yaml)
+  type: NodePort      # Accessible externally on a high random port (30000–32767)
