@@ -11,7 +11,8 @@ namespace ProductApi.Services
             new Product { Id = 1, Name = "Pen", Price = 10 },
             new Product { Id = 2, Name = "Notebook", Price = 50 },
             new Product { Id=3, Name="Anil",Price=100},
-            new Product { Id=4 , Name="Jeff", Price=200}
+            new Product { Id=4 , Name="Jeff", Price=200},
+            new Product{ Id=5, Name="Vikash", Price=300}
         };
 
         public List<Product> GetAll() => _products;
