@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapi
+      app: productapi
   template:
     metadata:
       labels:
-        app: myapi
+        app: productapi
     spec:
       containers:
-        - name: myapi
-          image: myapi:v3
+        - name: productapi
+          image: aspanil04/productapi:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
